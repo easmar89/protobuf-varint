@@ -23,7 +23,7 @@ def decode_varint(binary):
     return num
 
 if __name__ == "__main__":
-    with open("150.uint64", "rb") as f: 
+    with open("./examples/150.uint64", "rb") as f: 
         num = int.from_bytes(f.read(), byteorder="big")
         print(encode_varint(num))
         print(decode_varint(encode_varint(num)))

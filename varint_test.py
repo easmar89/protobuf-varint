@@ -1,9 +1,9 @@
 from varint import encode_varint, decode_varint
 
 test_cases = (
-    ("1.uint64", b'\x01'),
-    ("150.uint64", b'\x96\x01'),
-    ("maxint.uint64", b'\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01')
+    ("./examples/1.uint64", b'\x01'),
+    ("./examples/150.uint64", b'\x96\x01'),
+    ("./examples/maxint.uint64", b'\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01')
 )
 
 for file, expectation in test_cases:
